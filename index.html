@@ -1,37 +1,175 @@
+<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <style>
-        .color-grey{
-            color: grey;
-        }
-        .color-darkgoldenrod{
-            color:darkgoldenrod;
-        }
-    </style>
-    <title>Resume - Asif Raza</title>
-</head>
-<body>
-<div class="container text-center">
-    <div class="header">
-        <h1 class="title color-darkgoldenrod">Asif Raza</h1>
-        <p class="sub-title"><span class="color-grey">Department: </span>Computer Science</p>
+  <head>
+    <meta charset="utf-8">
+    <title>Asif Raza - Electronic Resume</title>
+
+    <!-- theme -->
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+       <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+       <script type="text/javascript">
+           function updateActive() {
+               $("body").attr("class", "");
+               $("body").addClass(document.location.hash.substring(2));
+               $("section").removeClass("active");
+               $("section#" + document.location.hash.substring(2)).addClass("active");
+               $("menu a").removeClass("active");
+               var left = $("a[href='#_" + document.location.hash.substring(2) + "']").addClass("active").offset().left;
+               $("nav .tracker").css( "left", left );
+           }
+           $(document).ready(function() {
+               $("menu li").on("mouseover", function(e) {
+                   document.location = $(e.target).closest("li").children("a").attr('href');
+                   updateActive();
+               });
+
+               window.onhashchange = updateActive;
+               if (!document.location.hash.length)
+                   document.location.hash = $("nav menu a").attr('href');
+               updateActive();
+           });
+       </script>
+  </head>
+  <body>
+    <div class="miniheader">
+      <h1>Asif Raza</h1>
+      <h2>
+        <a href="#">asifraza.me</a> &mdash;
+        <a href="mailto:raoasifraza1@hotmail.com">raoasifraza1@hotmail.com</a> &mdash;
+        <a href="tel:00923002528517">+92 300-252-8517</a>
+      </h2>
     </div>
-    <div class="footer">
-        <address>
-            Written by <a href="mailto:raoasifraza1@hotmail.com" class="color-darkgoldenrod">Asif Raza</a>.<br>
-            Visit at:
-            <a href="http://github.com/raoasifraza11" target="_blank" class="color-darkgoldenrod">GitHub</a>
-        </address>
-    </div>
-</div>
+
+    <header>
+        <nav>
+            <div class="tracker"></div>
+            <menu>
+                <li><a href="#_summary">SUM<span>mary</span></a></li>
+                <li><a href="#_experience">EXP<span>erience and History</span></a></li>
+                <li><a href="#_training">EDU<span>cation</span></a></li>
+                <li><a href="#_knowledge">KNO<span>wledge and Skills</span></a></li>
+                <li><a href="#_profiles">EXT<span>ernal Profiles</span></a></li>
+            </menu>
+        </nav>
+
+        <h1>Asif Raza</h1>
+        <h2>
+          <a href="#">asifraza.me</a> &mdash;
+          <a href="mailto:raoasifraza1@hotmail.com">raoasifraza1@hotmail.com</a> &mdash;
+          <a href="tel:00923002528517">+92 300-252-8517</a>
+        </h2>
+    </header>
+
+    <section id="summary">
+
+        <p>
+            I am a web&ndash; application designer and developer and GRO at <em><a href="#">Fauji Foundation Hospital</a></em>.
+        </p>
+        <p>
+            My code is <em><strong>clean</strong>, transparent, documented</em>, reusable, secure and maintainable.
+        </p>
+        <dl>
+            <dt>I belive in yourself you know more than you think you do.</dt>
+            <dt>I believe in asking the right questions before searching for solutions.</dt>
+            <dt>I believe in refactoring the product before adding features.</dt>
+            <dt>I believe in open source and that sociality benefits code and ideas as much as it does people.</dt>
+        </dl>
+
+    </section>
+    <section id="experience">
+
+            <h1>Fulltime</h1>
+            <h2>Fauji Foundation Hospital, Rawalpindi<span>2013-Present<br />
+                    <strong><em>Medical Technician for Central Medical Gas Room.</em></strong></span></h2>
+            <p>I have worked in Central Medical Gas Room as Medical Technician My responsibilities are.</p>
+            <dl>
+                <dt>Operate vacuum plant, air compressor plant, VIE-30 plant.</dt>
+                <dt>Purchase all required gasses such as Oxygen, Nitrous Oxide, Nitrogen, Air, Carbon Di Oxide etc.</dt>
+                <dt>Maintenance of all Central Medical Gas Equipments.</dt>
+            </dl>
+
+            <h2>Nishat Textile Mills Pvt. Ltd<span>2010-2012<br />
+                    <strong><em>Quality Assurance Technician.</em></strong></span></h2>
+            <p>I have preform my duties as <a href="#">Quality Assurance Technician</a> in Physical and Chemical Laboratory sections.</p>
+            <dl>
+                <dt>We work closely together under the organizational principles, with daily stand-up meetings.</dt>
+                <dt>I work on many test analysis physical tests such as (washing, color fastness, shrinkage etc...).</dt>
+                <dt>and chemical tests such as (water php, formaldehyde, acidity, base, chemical formulation ...).</dt>
+            </dl>
+            <p>I complete assigned duties independently, record results from tests, investigations, and observations in a log, and analyze and evaluate them.</p>
 
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-</body>
+
+            <h1>On the side</h1>
+            <h2>Central Asian Cellular Forum<span>2013-2014<br />
+                    <strong><em>Web developer and iOS, Android Apps Marketing.</em></strong></span></h2>
+            <p>I work on popular content management systems or php frameworks is Wordpress, Laravel etc. </p>
+            <p>I work on marketing of iOS and Android apps using social network such as (facebook, google plus, twitter...).</p>
+
+        </section>
+
+        <section id="training">
+
+            <h1>Education</h1>
+            <h2>Abasyn University Islamabad Campus<span>2014-2018 (Present)</span></h2>
+            <p>
+                Bachelor degree in <b>Computer Science</b>.<br />
+                <br />
+                This course involves general computer science but focuses on Java and Web application development.
+            </p>
+
+        </section>
+
+        <section id="knowledge">
+
+            <h1>Skills</h1>
+
+            <h2>Software Development</h2>
+            <p>
+                <b>Java SE/EE, PHP</b>, Android SDK, C#, C, PHP, Bash.
+            </p>
+
+            <h2>Web Design</h2>
+            <p>
+                <b>HTML 5, CSS 3</b>, JavaScript, jQuery, Photoshop.
+            </p>
+
+            <h2>Toolchain</h2>
+            <p>
+                <b>IntelliJ IDEA, IntelliJ AppCode</b>, Eclipse, Maven, Xcode, CLI, GIT, SVN, PhpStrom, Visual Studio.
+            </p>
+
+            <h2>System Administration</h2>
+            <p>
+                Linux (Gentoo, Arch, Debian), FreeBSD, OS X.
+            </p>
+
+            <h2>Technologies</h2>
+            <p>
+                Android, APS, Bash, CSS, GIT, HTML, HTTP, In-App Purchasing, JSON, Java, JavaScript, PHP, Push Notifications, XML, jQuery.
+            </p>
+
+        </section>
+
+        <section id="profiles">
+
+            <h1>Output</h1>
+
+            <h2>GitHub<span><a href="https://github.com/raoasifraza11">github.com/raoasifraza11</a><br />
+                    My personal code repositories.</span></h2>
+
+            <h2>Google+<span><a href="https://plus.google.com/110236706551116483961">plus.google.com/raoasifraza</a><br />
+                    This is me being social.</span></h2>
+
+            <h2>LinkedIn<span><a href="https://www.linkedin.com/in/raoasifraza/">linkedin.com/in/raoasifraza/</a><br />
+                    My professional profile.</span></h2>
+
+            <h1>Electronic Resume</h1>
+            <h2>Resume (PDF)<span><a href="https://www.slideshare.net/slideshow/embed_code/key/4FwnR8OMGCls7J">slidesshare.net/resume.pdf</a><br />
+                    This resume, in PDF format.</span></h2>
+
+        </section>
+
+  </body>
 </html>
