@@ -1,0 +1,29 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+	Mr.Asif Raza
+	Contact: raoasifraza1 [at] hotmail.com
+	Twitter: @raoasifraza
+	From: Islamabad, Punjab, Pakistan
+
+# THANKS
+
+	Lookup: Mr. Arslan Ahmad
+	Facebook: http://facebook.com/ahamd456
+	From: Islamabad, Punjab, Pakistan
+
+# TECHNOLOGY COLOPHON
+
+        HTML5, CSS3
+        jQuery
+
+# SITE
+	Last update:2017/01/19
+	Language: English
+	Doctype: HTML5
+	IDE: Atom, PhpStrom, Photoshop
+
+
+
+
