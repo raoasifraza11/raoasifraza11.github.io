@@ -10,29 +10,8 @@
       <!-- theme -->
     <link rel="stylesheet" href="css/main.css" />
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-       <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-       <script type="text/javascript">
-           function updateActive() {
-               $("body").attr("class", "");
-               $("body").addClass(document.location.hash.substring(2));
-               $("section").removeClass("active");
-               $("section#" + document.location.hash.substring(2)).addClass("active");
-               $("menu a").removeClass("active");
-               var left = $("a[href='#_" + document.location.hash.substring(2) + "']").addClass("active").offset().left;
-               $("nav .tracker").css( "left", left );
-           }
-           $(document).ready(function() {
-               $("menu li").on("mouseover", function(e) {
-                   document.location = $(e.target).closest("li").children("a").attr('href');
-                   updateActive();
-               });
-
-               window.onhashchange = updateActive;
-               if (!document.location.hash.length)
-                   document.location.hash = $("nav menu a").attr('href');
-               updateActive();
-           });
-       </script>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
   </head>
   <body>
     <div class="miniheader">
