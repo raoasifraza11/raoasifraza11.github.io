@@ -37,7 +37,7 @@ header {
   background:     white;
   border-bottom:  1px solid #CCC;
   box-shadow:     0 0 20px 0 #CCC;
-  position:       absolute;
+  position:       fixed;
   z-index:        2;
   top:            0;
   width:          100%;
