@@ -207,6 +207,7 @@ menu li a, menu li a:hover, menu li .active, menu li :link, menu li .active:hove
 menu li:hover, menu li a:hover {
   color:          #fff;
   background-color: #666;
+  cursor: pointer;
 }
 menu span {
   position:       absolute;
