@@ -204,8 +204,9 @@ menu li {
 menu li a, menu li a:hover, menu li .active, menu li :link, menu li .active:hover, menu li :link:hover {
   border:         none;
 }
-menu li:hover {
-  color:          black;
+menu li:hover, menu li a:hover {
+  color:          #fff;
+  background-color: #666;
 }
 menu span {
   position:       absolute;
