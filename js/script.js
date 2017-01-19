@@ -1,11 +1,11 @@
 function updateActive() {
     $("body").attr("class", "");
-    $("body").addClass(document.location.hash.substring(2));
+    $("body").addClass(document.location.hash.substring(1));
     $("section").removeClass("active");
-    $("section#" + document.location.hash.substring(2)).addClass("active");
+    $("section#" + document.location.hash.substring(1)).addClass("active");
     $("menu a").removeClass("active");
-    var left = $("a[href='#_" + document.location.hash.substring(2) + "']").addClass("active").offset().left;
-    $("nav .tracker").css( "left", left );
+    var left = $("a[href='#" + document.location.hash.substring(1) + "']").addClass("active").offset().left;
+    $("nav .tracker").css( "left", left).css("display", 'block');
 }
 $(document).ready(function() {
     $("menu li").on("mouseover", function(e) {
