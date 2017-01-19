@@ -148,7 +148,7 @@ header h1 {
 
 header img {
   border-radius:  5px;
-  box-shadow:     0 0 20px 0 #CCC;
+  box-shadow:     0 0 20px 0 #CCCCCC;
   position:       absolute;
   z-index:        -1;
   top:            4.5em;
