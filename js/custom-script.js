@@ -1,3 +1,6 @@
+/* This script is included in bottom of html body with minified version
+ * This is just for sample */
+
 function updateActive() {
     $("body").attr("class", "");
     $("body").addClass(document.location.hash.substring(1));
