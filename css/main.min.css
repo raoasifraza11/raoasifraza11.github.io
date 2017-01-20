@@ -7,7 +7,7 @@ section{position:absolute;z-index:-1;top:100%;width:70%;max-height:0;padding:0;m
 section.active{z-index:0;top:0;max-height:2500px;padding-top:250px;padding-bottom:2em;}
 section div.background{display:block;position:absolute;z-index:-1;left:0;width:100%;margin-top:-2500px;opacity:0;-webkit-transition:all 0.7s ease;-moz-transition:all 0.7s ease;-ms-transition:all 0.7s ease;-o-transition:all 0.7s ease;transition:all 0.7s ease;}
 section.active div.background{margin-top:0;opacity:1;}
-#summary.active{padding-top:400px;}
+#summary.active{padding-top:300px;}
 #summary div.background img{float:left;}
 #summary.active div.background{margin-top:-200px;}
 footer{position:absolute;bottom:0;width:100%;}
