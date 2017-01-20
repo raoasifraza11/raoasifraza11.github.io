@@ -157,9 +157,7 @@
 
     <!-- Javascripts/jquery -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-
+    <script type="text/javascript">function updateActive(){$("body").attr("class",""),$("body").addClass(document.location.hash.substring(1)),$("section").removeClass("active"),$("section#"+document.location.hash.substring(1)).addClass("active"),$("menu a").removeClass("active");var a=$("a[href='#"+document.location.hash.substring(1)+"']").addClass("active").offset().left;$("nav .tracker").css("left",a).css("display","block")}$(document).ready(function(){$("menu li").on("mouseover",function(a){document.location=$(a.target).closest("li").children("a").attr("href"),updateActive()}),window.onhashchange=updateActive,document.location.hash.length||(document.location.hash=$("nav menu a").attr("href")),updateActive()});</script>
 
   <!-- ./end script -->
   </body>
