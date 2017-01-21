@@ -23,16 +23,6 @@ body {
   overflow:       scroll;
 }
 
-#miniheader {
-  background:     rgba(255, 255, 255, 0.9);
-  border-bottom:  1px solid #CCC;
-  box-shadow:     0 0 20px 0 #CCC;
-  position:       fixed;
-  z-index:        1;
-  top:            0;
-  width:          100%;
-  padding:        1ex;
-}
 header {
   background:     white;
   border-bottom:  1px solid #CCC;
@@ -142,7 +132,8 @@ ul a {
 header h1 {
   font-size:      400%;
 }
-#miniheader h2, header h2 {
+
+header h2 {
   font-size:      80%;
 }
 
