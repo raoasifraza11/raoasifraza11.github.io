@@ -87,6 +87,7 @@ and (orientation: landscape) {
 
     header {
         height:         300px;
+        position: absolute;
     }
 
     header h1, header h2 {
@@ -156,6 +157,7 @@ and (orientation: landscape) {
 
     header {
         height:         300px;
+        position: absolute;
     }
 
     header h1, header h2 {
@@ -222,6 +224,7 @@ and (orientation: landscape) {
 
     header {
         height:         300px;
+        position: absolute;
     }
 
     header h1, header h2 {
