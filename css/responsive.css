@@ -12,12 +12,12 @@ and (max-device-width: 568px)
 and (-webkit-min-device-pixel-ratio: 2)
 and (orientation: portrait) {
 
-    header span {
-        display: none;
+    header {
+        height:         320px;
     }
 
-    header {
-        height:         300px;
+    header span {
+        display: none;
     }
 
     header h1, header h2 {
@@ -39,6 +39,11 @@ and (orientation: portrait) {
         margin-left:    -22em;
     }
 
+    menu li {
+        padding:        0.1em 0;
+        margin:         0 3em 0 0;
+        font-size: 200%;
+    }
     section {
         width:          90%;
         margin:         0 5% 0;
@@ -87,7 +92,6 @@ and (orientation: landscape) {
 
     header {
         height:         300px;
-        position: absolute;
     }
 
     header h1, header h2 {
@@ -157,7 +161,6 @@ and (orientation: landscape) {
 
     header {
         height:         300px;
-        position: absolute;
     }
 
     header h1, header h2 {
@@ -212,6 +215,78 @@ and (orientation: landscape) {
     }
 }
 
+/* Portrait iPad  */
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1042px)
+and (orientation: portrait) {
+
+    header {
+        height:         320px;
+    }
+
+    header span {
+        display: none;
+    }
+
+    header h1, header h2 {
+        margin:         0;
+        padding:        0;
+        border-bottom:  none;
+    }
+    header h1 {
+        font-size:      700%;
+    }
+
+    header h2 {
+        font-size:      170%;
+    }
+
+    header img {
+        width:          6em;
+        height:         6em;
+        margin-left:    -22em;
+    }
+
+    menu li {
+        padding:        0.1em 0;
+        margin:         0 3em 0 0;
+        font-size: 200%;
+    }
+    section {
+        width:          90%;
+        margin:         0 5% 0;
+    }
+
+    section.active {
+        padding-top:    200px;
+    }
+
+    #summary.active {
+        padding-top:    200px;
+    }
+
+    h1 {
+        font-size:      420%;
+    }
+    h2, h3 {
+        font-weight:    300;
+    }
+    h2 {
+        font-size:      200%;
+    }
+    p {
+        margin:         1em 3em;
+        font-size: 180%;
+    }
+
+    dl {
+        margin-left: 20px;
+        font-size: 190%;
+        line-height: 150%;
+
+    }
+}
 /* Landscape 6+ */
 @media only screen
 and (min-device-width: 414px)
@@ -224,7 +299,6 @@ and (orientation: landscape) {
 
     header {
         height:         300px;
-        position: absolute;
     }
 
     header h1, header h2 {
