@@ -24,8 +24,6 @@ and (orientation: portrait) {
         margin:         0;
         padding:        0;
         border-bottom:  none;
-    }
-    header h1 {
         font-size:      700%;
     }
 
@@ -49,23 +47,19 @@ and (orientation: portrait) {
         margin:         0 5% 0;
     }
 
-    section.active {
-        padding-top:    200px;
-    }
-
-    #summary.active {
+    section.active, #summary.active {
         padding-top:    200px;
     }
 
     h1 {
         font-size:      420%;
     }
-    h2, h3 {
-        font-weight:    300;
-    }
+
     h2 {
+        font-weight:    300;
         font-size:      200%;
     }
+
     p {
         margin:         1em 3em;
         font-size: 180%;
@@ -99,8 +93,6 @@ and (orientation: landscape) {
         margin:         0;
         padding:        0;
         border-bottom:  none;
-    }
-    header h1 {
         font-size:      700%;
     }
 
@@ -132,23 +124,18 @@ and (orientation: landscape) {
         margin:         0 5% 0;
     }
 
-    section.active {
-        padding-top:    200px;
-    }
-
-    #summary.active {
+    section.active, #summary.active {
         padding-top:    200px;
     }
 
     h1 {
         font-size:      320%;
     }
-    h2, h3 {
+    h2{
         font-weight:    300;
-    }
-    h2 {
         font-size:      180%;
     }
+
     p {
         margin:         1em 3em;
         font-size: 120%;
@@ -169,13 +156,14 @@ and (min-device-width: 375px)
 and (max-device-width: 667px)
 and (-webkit-min-device-pixel-ratio: 2)
 and (orientation: landscape) {
-    header span {
-        display: inline-block;
-    }
 
     header {
         height:         300px;
         position: absolute;
+    }
+
+    header span {
+        display: inline-block;
     }
 
     header h1, header h2 {
@@ -226,10 +214,8 @@ and (orientation: landscape) {
     h1 {
         font-size:      320%;
     }
-    h2, h3 {
+    h2{
         font-weight:    300;
-    }
-    h2 {
         font-size:      180%;
     }
     p {
@@ -285,21 +271,15 @@ and (orientation: portrait) {
         margin:         0 5% 0;
     }
 
-    section.active {
-        padding-top:    200px;
-    }
-
-    #summary.active {
+    section.active, #summary.active {
         padding-top:    200px;
     }
 
     h1 {
         font-size:      420%;
     }
-    h2, h3 {
+    h2{
         font-weight:    300;
-    }
-    h2 {
         font-size:      200%;
     }
     p {
@@ -320,13 +300,14 @@ and (min-device-width: 768px)
 and (max-device-width: 1024px)
 and (-webkit-min-device-pixel-ratio: 2)
 and (orientation: landscape) {
-    header span {
-        display: inline-block;
-    }
 
     header {
         height:         300px;
         position: absolute;
+    }
+
+    header span {
+        display: inline-block;
     }
 
     header h1, header h2 {
@@ -353,21 +334,15 @@ and (orientation: landscape) {
         margin:         0 5% 0;
     }
 
-    section.active {
-        padding-top:    200px;
-    }
-
-    #summary.active {
+    section.active, #summary.active {
         padding-top:    200px;
     }
 
     h1 {
         font-size:      320%;
     }
-    h2, h3 {
-        font-weight:    300;
-    }
     h2 {
+        font-weight:    300;
         font-size:      180%;
     }
     p {
